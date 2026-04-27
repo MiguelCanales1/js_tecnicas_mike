@@ -1,6 +1,6 @@
 on: push 
 jobs:
-  build node:
+  build-node:
     runs-on: ubuntu-latest
     container: node:16
     steps:
@@ -9,4 +9,3 @@ jobs:
     - run: npm --version
     - uses: actions/checkout@v3
     - run: node app.js
-    
